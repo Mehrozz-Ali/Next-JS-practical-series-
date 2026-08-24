@@ -1,5 +1,5 @@
 import fs from 'fs';
-// import { ServerComponentTwo } from "./server-component-two";
+import { ServerComponentTwo } from "./server-component-two";
 import { ClientComponentOne } from './client-component-one';
 
 
@@ -8,8 +8,9 @@ export const ServerComponentOne = () => {
     return (
         <>
             <h1>Server component one</h1>
-            <ClientComponentOne/>
-            {/* <ServerComponentTwo /> */}
+            <ClientComponentOne>
+                <ServerComponentTwo />
+            </ClientComponentOne>
         </>
     )
 }
