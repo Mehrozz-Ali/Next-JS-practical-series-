@@ -1,7 +1,7 @@
 "use client";
 
 import { removeProduct } from "@/actions/products";
-import { getProducts } from "@/prisma-db";
+import Form from "next/dist/client/form";
 import { useOptimistic } from "react";
 
 
@@ -32,11 +32,11 @@ export default function ProductDetail({ products }: { products: Product[] }) {
                     <h2 className="text-xl font-semibold">{product.title}</h2>
                     <p>{product.description}</p>
                     <p className="text-lg font-medium">${product.price.toFixed(2)}</p>
-                    <form action={removeProductById.bind(null, product.id)}>
+                    <Form action={removeProductById.bind(null, product.id)}>
                         <button type="submit" className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-500">
                             Delete
                         </button>
-                    </form>
+                    </Form>
                 </li>
             ))
             }
