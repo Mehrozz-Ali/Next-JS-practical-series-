@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-# Dependencies
-node_modules/
-
-# Next.js
-.next/
-out/
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# OS files
-.DS_Store
-
-# Vercel
-.vercel/
-
-# TypeScript
-*.tsbuildinfo
-
-# Debug
-*.log
-=======
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -72,4 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
->>>>>>> b8a020cf67c23389a24f4020f954dbced0609bd2
